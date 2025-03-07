@@ -1,0 +1,37 @@
+@media screen and (max-width: 450px) {
+ body{
+    display: grid;
+    grid-template-areas: 
+    "head"
+    "bild"
+    "wel"
+    "tack"
+    "foot";
+    }
+    .material-symbols-outlined {
+        cursor: pointer;
+    }
+    header {
+        grid-area: head;
+        display:flex;
+        justify-content: space-between;
+
+    }
+
+    #pic {
+        grid-area: bild;
+    }
+
+    .text {
+        grid-area: wel;
+    }
+
+    #linking {
+        grid-area: tack;
+    }
+
+    footer {
+        grid-area: foot;
+    }
+
+}
