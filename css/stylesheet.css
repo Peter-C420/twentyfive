@@ -9,25 +9,57 @@
     "foot";
     }
     .material-symbols-outlined {
-        cursor: pointer;
+        
     }
     header {
         grid-area: head;
-        display:flex;
+        display: flex;
         justify-content: space-between;
-
     }
-
-    #pic {
+    .pic {
+        display: flex;
+        justify-content: center;
+    }
+    .piccy {
         grid-area: bild;
+        border-radius: 50%;
+        height: 150px;
+        width: auto;
+        padding: 20px;
     }
 
     .text {
         grid-area: wel;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
     }
 
-    #linking {
+    h1{
+        display: flex;
+        justify-content: center;
+       font-size: 30px;
+       margin: 0;
+    }
+
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .linking{
         grid-area: tack;
+    }
+
+    .btn {
+        background-color: black;
+        border-radius: 2rem;
+        width: 110px;
+        height: 50px;
+        color: white;
+        font-weight: 500;
+        margin: 2px;
+    
     }
 
     footer {
