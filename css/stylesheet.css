@@ -1,5 +1,21 @@
+/*Generell.css*/
+
+h1{
+    display: flex;
+    font-size: 35px;
+    margin: 0;
+    font-weight: bolder;
+
+}
+
+h2{
+    display: flex;
+    font-weight: lighter;
+}
+
+/*Mobil.css*/
 @media screen and (max-width: 450px) {
- body{
+ #main{
     display: grid;
     grid-template-areas: 
     "head"
@@ -11,7 +27,7 @@
     .material-symbols-outlined {
         
     }
-    header {
+    #headr {
         grid-area: head;
         display: flex;
         justify-content: space-between;
@@ -20,11 +36,12 @@
         display: flex;
         justify-content: center;
     }
-    .piccy {
+    #piccy {
         grid-area: bild;
         border-radius: 50%;
         height: 150px;
-        width: auto;
+        width: 150px;
+        object-fit: cover;
         padding: 20px;
     }
 
@@ -33,22 +50,18 @@
         display: flex;
         flex-direction: column;
         margin: 0;
+        align-items: center;
     }
 
-    h1{
-        display: flex;
-        justify-content: center;
-       font-size: 30px;
-       margin: 0;
-    }
-
-    h2{
-        display: flex;
-        justify-content: center;
+    #title{
+        color: black;
+        font-weight: 600;   
     }
     
-    .linking{
+    #linking{
         grid-area: tack;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .btn {
@@ -58,12 +71,64 @@
         height: 50px;
         color: white;
         font-weight: 500;
-        margin: 2px;
+
     
     }
 
-    footer {
+    #footr {
         grid-area: foot;
     }
 
+    #about{
+    display: grid;
+    grid-template-areas: 
+    "hed hed"
+    "tex tex"
+    "bill exp"
+    "tet tet"
+    "fot fot";
+    }
+
+    #heady{
+        grid-area: hed;
+        display: flex;
+        justify-content: right;
+        
+    }
+
+    #texty{
+        grid-area: tex;
+        display: flex;
+        justify-content: center;
+        font-weight: bolder;
+    }
+
+    #pict{
+        grid-area: bill;
+        border-radius: 20%;
+        height: 150px;
+        width: 125px;
+        object-fit: cover;
+        padding: 20px;
+    }
+
+    #exp{
+        display: flex;
+        padding: 10px;
+        flex-direction: column;¨
+    }
+
+    .exper{
+        display: flex;
+    }
+
+    #tet{
+        grid-area: tet;
+        display: flex;
+        justify-content: center;
+    }
+    
+
 }
+
+    
