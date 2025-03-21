@@ -15,7 +15,8 @@ h2{
 
 /*Mobil.css*/
 @media screen and (max-width: 450px) {
- #main{
+    /* MAIN SIDA*/
+    #main{
     display: grid;
     grid-template-areas: 
     "head"
@@ -79,6 +80,8 @@ h2{
         grid-area: foot;
     }
 
+    /* ABOUT SIDA */
+
     #about{
     display: grid;
     grid-template-areas: 
@@ -128,6 +131,47 @@ h2{
         justify-content: center;
     }
     
+    /*EXPERIENCE SIDA*/
+
+    #expsida{
+        display: grid;
+        grid-template-areas: 
+        'Headdr '
+        'Texas'
+        'textr1'
+        'textr2'
+        'foot23';
+        display: flex;
+        flex-direction: column;
+        align-content: space-evenly;
+        justify-items: center;
+        
+    }
+
+    #title{
+        grid-area: Texas;
+        display: flex;
+        justify-content: center;
+    }
+
+    #navknapp{
+        grid-area: headdr;
+        display: flex;
+        justify-content: end;
+        
+    }
+
+    #expe1{
+        grid-area: textr1;
+        display: flex;
+        padding: 15px;
+    }
+
+    #expe2{
+        grid-area: textr2;
+        display: flex;
+        padding: 15px;
+    }
 
 }
 
