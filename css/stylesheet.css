@@ -1,4 +1,65 @@
-/*Generell.css*/
+/*Generell.css + länk-knappar (fina)*/
+
+a{
+    text-decoration: none;
+}
+
+.link1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline-style: solid;
+    width: 150px;
+    height: 70px;
+    border-radius: 20px;
+    color: white;
+    margin: 10px;
+    font-weight: bolder;
+    background-color: black;
+}
+
+.link2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline-style: solid;
+    width: 150px;
+    height: 70px;
+    border-radius: 20px;
+    color: white;
+    margin: 10px;
+    font-weight: bolder;
+    background-color: black;
+}
+
+.link3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline-style: solid;
+    width: 150px;
+    height: 70px;
+    border-radius: 20px;
+    color: white;
+    margin: 10px;
+    font-weight: bolder;
+    background-color: black;
+}
+
+.special-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline-style: solid;
+    width: 150px;
+    height: 70px;
+    border-radius: 20px;
+    color: black;
+    margin: 10px;
+    font-weight: bolder;
+    background-color: white;
+}
+
 
 h1{
     display: flex;
@@ -13,12 +74,39 @@ h2{
     font-weight: lighter;
 }
 
+footer{
+background-color: grey;
+}
+
 /*Mobil.css*/
 @media screen and (max-width: 450px) {
+    /*hamburgarmeny*/
+
+    .hamburger-nav{
+        display:flex;
+    }
+
+    .hamburger-menu{
+        position: relative;
+        display: inline-block;
+    }
+
+    .hambuger-iconop{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 24px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    }
+
     /* MAIN SIDA*/
     #main{
     display: grid;
     grid-template-areas: 
+    "click"
     "head"
     "bild"
     "wel"
@@ -28,10 +116,17 @@ h2{
     .material-symbols-outlined {
         
     }
+    #clicky{
+        grid-area: click;
+        display: flex;
+        justify-content: right;
+    }
+
     #headr {
         grid-area: head;
         display: flex;
         justify-content: space-between;
+    
     }
     .pic {
         display: flex;
@@ -106,6 +201,12 @@ h2{
         font-weight: bolder;
     }
 
+    #bildotext{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+
     #pict{
         grid-area: bill;
         border-radius: 20%;
@@ -117,12 +218,13 @@ h2{
 
     #exp{
         display: flex;
-        padding: 10px;
-        flex-direction: column;¨
+        padding: 5px;
+        flex-direction: column;
     }
 
     .exper{
         display: flex;
+        align-content: space-evenly;
     }
 
     #tet{
@@ -171,6 +273,43 @@ h2{
         grid-area: textr2;
         display: flex;
         padding: 15px;
+    }
+
+    /*Contact site*/
+
+    #contasida{
+        display: grid;
+        grid-template-areas: 
+        'huvve'
+        'mailink'
+        'navs'
+        'foten';
+    }
+
+    #heed{
+        grid-area: huvve;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    #mailolinke{
+        grid-area: mailink;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        outline-style: solid;
+        border-radius: 40px;
+
+
+    }
+
+    #sistalankar{
+        grid-area: foten;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px;
     }
 
 }

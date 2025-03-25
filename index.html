@@ -9,15 +9,18 @@
     <title>Document</title>
 </head>
 <body id="main">
+  <section id="clicky">
+    <div class="material-symbols-outlined" style="font-size: 36px;"> menu </div>
+      
+  </section>
     <header id="headr">
         <h1>Peter Chau</h1>
-        <div class="material-symbols-outlined" style="font-size: 36px;"> menu </div>
-      
     </header>
     
    <section class="pic">
     <img id="piccy" src="img/serious.jpg" alt="Peter Chau profile picture">
    </section>
+
    <section class="text">
         <h2>
           Hello, I'm
@@ -36,5 +39,31 @@
    <footer id="footr">
 
    </footer>
+
+   <nav class="hamburger-nav">
+   
+      <div class="hamburger-menu">
+        
+        <div class="hamburger-iconop" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu-linksopen">
+          
+          <a href="toggleMenu()">Main</a>
+        
+          <a href="toggleMenu()">About</a>
+      
+          <a href="toggleMenu()">Experiences</a>
+
+          <a href="toggleMenu()">Contact</a>
+
+        </div>
+
+      </div>
+   
+  </nav>
 </body>
 </html>
