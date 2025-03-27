@@ -78,29 +78,11 @@ footer{
 background-color: grey;
 }
 
-/*Mobil.css*/
+    /*Mobil.css*/
+
 @media screen and (max-width: 450px) {
+    
     /*hamburgarmeny*/
-
-    .hamburger-nav{
-        display:flex;
-    }
-
-    .hamburger-menu{
-        position: relative;
-        display: inline-block;
-    }
-
-    .hambuger-iconop{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 24px;
-        width: 30px;
-        cursor: pointer;
-    }
-
-    }
 
     /* MAIN SIDA*/
     #main{
@@ -112,10 +94,9 @@ background-color: grey;
     "wel"
     "tack"
     "foot";
+    background-color: #DFDBD2;
     }
-    .material-symbols-outlined {
-        
-    }
+
     #clicky{
         grid-area: click;
         display: flex;
@@ -138,7 +119,8 @@ background-color: grey;
         height: 150px;
         width: 150px;
         object-fit: cover;
-        padding: 20px;
+        margin: 20px;
+        border-style: solid;
     }
 
     .text {
@@ -185,6 +167,7 @@ background-color: grey;
     "bill exp"
     "tet tet"
     "fot fot";
+    background-color: #DFDBD2;
     }
 
     #heady{
@@ -213,24 +196,42 @@ background-color: grey;
         height: 150px;
         width: 125px;
         object-fit: cover;
-        padding: 20px;
+        margin: 20px;
+        border-style: solid;
     }
 
     #exp{
         display: flex;
         padding: 5px;
         flex-direction: column;
+        justify-content: space-evenly;
+        padding: 10px;
+        
     }
 
     .exper{
         display: flex;
         align-content: space-evenly;
+        outline-style: solid;
+        width: 170px;
+        height: 60px;
+        font-size: smaller;
+        border-radius: 10px;
+        align-items: center;
+        padding: 5px;
+        background-color: white;
+
     }
 
     #tet{
         grid-area: tet;
         display: flex;
         justify-content: center;
+        outline-style: solid;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 20px;
+        background-color: white;
     }
     
     /*EXPERIENCE SIDA*/
@@ -247,7 +248,7 @@ background-color: grey;
         flex-direction: column;
         align-content: space-evenly;
         justify-items: center;
-        
+        background-color: #DFDBD2;
     }
 
     #title{
@@ -267,12 +268,20 @@ background-color: grey;
         grid-area: textr1;
         display: flex;
         padding: 15px;
+        border-style: solid;
+        border-radius: 10px;
+        margin: 10px;
+        background-color: white;
     }
 
     #expe2{
         grid-area: textr2;
         display: flex;
         padding: 15px;
+        border-style: solid;
+        border-radius: 10px;
+        margin: 10px;
+        background-color: white;
     }
 
     /*Contact site*/
@@ -284,6 +293,7 @@ background-color: grey;
         'mailink'
         'navs'
         'foten';
+        background-color: #DFDBD2;
     }
 
     #heed{
