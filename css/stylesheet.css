@@ -1,3 +1,45 @@
+/*Desktop*/
+@media screen and (min-width: 450px){
+    #main{
+        grid-template-areas: 
+        'namnnn navbar'
+        'pfp text'
+        'pfp knappish'
+        'foot foot';
+    }
+
+    #clicky{
+        display: none;
+    }
+
+    #headr{
+        grid-area: namnnn;
+        margin: 20px;
+    }
+
+    .navbar{
+        display: flex;
+        grid-area: navbar;
+        
+
+    }
+
+    #piccy{
+        height: 300px;
+        border-radius: 50%;
+        width: 300px;
+        object-fit: cover;
+
+    }
+
+    .pic{
+        grid-area: pfp;
+    }
+    
+
+}
+
+
 /*Generell.css + länk-knappar (fina)*/
 
 a{
@@ -9,6 +51,7 @@ a{
     justify-content: center;
     align-items: center;
     outline-style: solid;
+    outline: black;
     width: 150px;
     height: 70px;
     border-radius: 20px;
@@ -23,6 +66,7 @@ a{
     justify-content: center;
     align-items: center;
     outline-style: solid;
+    outline-color: black;
     width: 150px;
     height: 70px;
     border-radius: 20px;
@@ -37,6 +81,7 @@ a{
     justify-content: center;
     align-items: center;
     outline-style: solid;
+    outline-color: black;
     width: 150px;
     height: 70px;
     border-radius: 20px;
@@ -54,6 +99,7 @@ a{
     width: 150px;
     height: 70px;
     border-radius: 20px;
+    outline-color: white;
     color: black;
     margin: 10px;
     font-weight: bolder;
@@ -76,6 +122,10 @@ h2{
 
 footer{
 background-color: grey;
+position: fixed;
+bottom:0;
+right: 0;
+left: 0;
 }
 
     /*Mobil.css*/
@@ -306,7 +356,7 @@ background-color: grey;
     #mailolinke{
         grid-area: mailink;
         display: flex;
-        justify-content: center;
+        justify-content: cente;
         margin-top: 40px;
         outline-style: solid;
         border-radius: 40px;
@@ -322,6 +372,21 @@ background-color: grey;
         padding: 30px;
     }
 
+    #maile{
+        font-size: 20px;
+    }
+
+    #linkedin{
+        font-size: 40px;
+        align-content: center;
+        margin-left: 30px;
+    }
+
+    #mailbox{
+        font-size: 40px;
+        align-content: center;
+        margin: 10px;
+    }
 }
 
     
