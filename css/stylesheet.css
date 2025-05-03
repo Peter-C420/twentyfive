@@ -1,41 +1,246 @@
 /*Desktop*/
-@media screen and (min-width: 450px){
+@media screen and (min-width: 451px){
+    
+    
     #main{
+        display: grid;
         grid-template-areas: 
         'namnnn navbar'
         'pfp text'
         'pfp knappish'
         'foot foot';
+        background-color: #DFDBD2;
     }
 
     #clicky{
         display: none;
     }
 
-    #headr{
+    .headr{
         grid-area: namnnn;
         margin: 20px;
+        padding-left: 50px;
+        height: 40px;
     }
 
     .navbar{
-        display: flex;
         grid-area: navbar;
-        
-
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content:space-evenly ;
+        padding-top: 20px;
     }
 
-    #piccy{
-        height: 300px;
-        border-radius: 50%;
-        width: 300px;
-        object-fit: cover;
-
+    .navbox{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #DFDBD2;
+        background-color: black;
+        display: flex;
+        outline-style: solid;
+        outline-color: #DFDBD2;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;   
     }
 
     .pic{
         grid-area: pfp;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #piccy{
+        height: 400px;
+        border-radius: 50%;
+        width: 400px;
+        object-fit: cover;
+    }
+
+    .text{
+        grid-area: text;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 40px;
+    }
+
+    #linking{
+        grid-area: knappish;
+        display: flex;
+        justify-content: center;
+        align-content: space-evenly;
+        margin: 5px;
+    }   
+
+
+    .btn{
+        display: flex;
+        height: 50px;
+        width: 200px;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+    }
+
+    #footr{
+        grid-area: foot;
+    
+        padding: 5px;
     }
     
+    #about{
+        display: grid;
+        grid-template-areas:
+        'title navbar'
+        'pic exp'
+        'pic text'
+        'foot foot';
+        background-color: #DFDBD2;
+    }
+
+    #heady{
+        display: none;
+    }
+
+    #texty{
+        grid-area: title;
+        padding: 30px;
+    }
+
+    #bildbredvidtext{
+        grid-area: pic;
+    }
+
+    #pict{
+        height: 600px;
+    }
+
+    #exp{
+        grid-area: exp;
+        display: flex;
+        flex-direction: row;
+        padding: 40px;
+    }
+
+    .exper{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #tet{
+        grid-area: text;
+        padding: 50px;
+    }
+    
+    #footr{
+        grid-area: foot;
+    }
+
+    #expsida{
+        display: grid;
+        grid-template-areas:
+        'title navbar'
+        'expe expe'
+        'foot foot';
+        background-color: #DFDBD2;
+    }
+
+    #navknapp{
+        display:none;
+    }
+
+    #title{
+        grid-area: title;
+        margin: 20px;
+        padding-left: 50px;
+        height: 40px;
+    }
+
+    #experiences{
+        grid-area: expe;
+        padding: 60px;
+        display: flex;
+    }
+
+    #expe1{
+        padding: 20px;
+    }
+
+    #expe2{
+        padding: 20px;
+    }
+
+    #footr{
+        grid-area: foot;
+    }
+    
+    #contasida{
+        display: grid;
+        grid-template-areas: 
+        'title'
+        'mailolink'
+        'nav'
+        'foot';
+        background-color: #DFDBD2;
+    }
+
+    #heed{
+        grid-area: title;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin: 20px;
+        padding-left: 50px;
+    }
+
+    #mailolinke{
+        grid-area: mailolink;
+        display: flex;
+        justify-content: center;
+    }
+
+    #boxme{
+        display: flex;
+        width: 600px;
+        flex-direction: row;
+        justify-content: center;
+        margin: 50px;
+        outline-offset: 5px;
+        outline-style: solid;
+        border-radius: 20px;
+    }
+
+    #mailbox{
+        margin: 10px;
+        font-size: 50px;
+    }
+
+    #linkedin{
+        margin: 10px;
+        margin-left: 50px;
+        font-size: 50px;
+    }
+
+    #sistalankar{
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 50px;
+        margin-top: 100px;
+    }
+
+
+    
+    #footr{
+        grid-area: foot;
+    }
 
 }
 
@@ -55,7 +260,7 @@ a{
     width: 150px;
     height: 70px;
     border-radius: 20px;
-    color: white;
+    color: #DFDBD2;
     margin: 10px;
     font-weight: bolder;
     background-color: black;
@@ -70,7 +275,7 @@ a{
     width: 150px;
     height: 70px;
     border-radius: 20px;
-    color: white;
+    color: #DFDBD2;
     margin: 10px;
     font-weight: bolder;
     background-color: black;
@@ -85,7 +290,7 @@ a{
     width: 150px;
     height: 70px;
     border-radius: 20px;
-    color: white;
+    color: #DFDBD2;
     margin: 10px;
     font-weight: bolder;
     background-color: black;
@@ -99,11 +304,11 @@ a{
     width: 150px;
     height: 70px;
     border-radius: 20px;
-    outline-color: white;
+    outline-color: black;
     color: black;
     margin: 10px;
     font-weight: bolder;
-    background-color: white;
+    background-color: #DFDBD2;
 }
 
 
@@ -131,6 +336,10 @@ left: 0;
     /*Mobil.css*/
 
 @media screen and (max-width: 450px) {
+
+    .navbar{
+        display: none;
+    }
     
     /*hamburgarmeny*/
 
@@ -197,7 +406,7 @@ left: 0;
         border-radius: 2rem;
         width: 110px;
         height: 50px;
-        color: white;
+        color: #DFDBD2;
         font-weight: 500;
 
     
@@ -269,7 +478,7 @@ left: 0;
         border-radius: 10px;
         align-items: center;
         padding: 5px;
-        background-color: white;
+        background-color: #DFDBD2;
 
     }
 
@@ -281,7 +490,7 @@ left: 0;
         border-radius: 20px;
         padding: 10px;
         margin: 20px;
-        background-color: white;
+        background-color: #DFDBD2;
     }
     
     /*EXPERIENCE SIDA*/
@@ -321,7 +530,7 @@ left: 0;
         border-style: solid;
         border-radius: 10px;
         margin: 10px;
-        background-color: white;
+        background-color: #DFDBD2;
     }
 
     #expe2{
@@ -331,7 +540,7 @@ left: 0;
         border-style: solid;
         border-radius: 10px;
         margin: 10px;
-        background-color: white;
+        background-color: #DFDBD2;
     }
 
     /*Contact site*/
